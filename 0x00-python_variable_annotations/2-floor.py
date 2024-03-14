@@ -7,6 +7,7 @@ type-annotated function
 
 import math
 
+
 def floor(n: float) -> int:
     """
     returns floor of a float
