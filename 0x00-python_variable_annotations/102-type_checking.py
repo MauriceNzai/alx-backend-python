@@ -11,7 +11,7 @@ def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
     returns a factored list
     """
-    zoomed_in: Tuple = [
+    zoomed_in: List = [
         item for item in lst
         for i in range(factor)
     ]
