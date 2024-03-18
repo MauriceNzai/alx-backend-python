@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-''' Description: Import wait_random from the previous python file that
-                 written
 
+''' Description: Import wait_random from the previous python file.
                  wait_n returns the list of all the delays(float values)
-                 in ascending order without using sort() because of concurrency.
+                 in ascending order without using sort().
     Arguments: n: int, max_delay: int = 10
 '''
+
 
 import asyncio
 import random
