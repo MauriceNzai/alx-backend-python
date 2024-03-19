@@ -16,11 +16,10 @@ async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     spawn_ls = []
     delay_ls = []
     for i in range(n):
-        ed_task = asyncio.create_task(wait_random(max_delay)) 
-        ed_task.add_done_callback(lambda x: delay_ls.append(x.result())) 
-        spawn_ls.append(ed_task)
-  
-    for spawn in spawn_ls:
-        await spawn 
-  
-    return delay_ls
+        ed_task = asyncio.create_task(wait_random(max_delay))
+        ed_task.add_done_callback(lambda x: delay_ls.append(x.result()))
+        spawn_ls.append(ed_task)
+    for spawn in spawn_ls:
+        await spawn
+
+    return delay_ls
